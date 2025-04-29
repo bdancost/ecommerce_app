@@ -33,6 +33,31 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
+      {/* navbar middle */}
+      <div className="navbar_middle flex items-center justify-center bg-[#f0f2f3] w-full h-[84px]">
+        <div className="lg:container">
+          <div className="logo_wrapper">
+            <Link
+              to="/"
+              className="text-3xl text-black font-inter font-medium capitalize flex items-center gap-2"
+            >
+              {" "}
+              <Armchair size="2rem" color="#029fae" /> Comforty
+            </Link>
+          </div>
+
+          <div className="search_box">
+            <form action="#" className="max-w-96 h-[44px]">
+              <input
+                type="text"
+                placeholder="Search here..."
+                className="w-full h-full  bg-white rounded-lg pl-4"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
