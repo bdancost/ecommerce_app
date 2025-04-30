@@ -5,8 +5,11 @@ import {
   Search,
   ShoppingCart,
   Heart,
+  User,
+  Menu,
 } from "lucide-react";
 import { Link } from "react-router";
+import { NavLink } from "react-router";
 
 const Navbar = () => {
   return (
@@ -55,11 +58,11 @@ const Navbar = () => {
           </div>
 
           <div className="search_box">
-            <form action="#" className="max-w-96 h-[44px] relative">
+            <form action="#" className="max-w-[443px] h-[44px] relative">
               <input
                 type="text"
                 placeholder="Search here..."
-                className="w-full h-full  bg-white rounded-lg pl-4"
+                className="max-w-[443px] w-full h-full  bg-white rounded-lg pl-4"
               />
 
               <button
@@ -73,7 +76,7 @@ const Navbar = () => {
           </div>
 
           {/* navbar middle right */}
-          <div className="navbar_middle_right">
+          <div className="navbar_middle_right flex items-center gap-4">
             <button className="btn capitalize">
               <ShoppingCart /> cart{" "}
               <div className="badge badge-sm bg-[#029fae]">2</div>
@@ -81,6 +84,72 @@ const Navbar = () => {
             <button className="btn capitalize">
               <Heart />
             </button>
+
+            <div className="dropdown">
+              <div tabIndex={0} role="button" className="btn m-1">
+                <User />
+              </div>
+              <ul
+                tabIndex={0}
+                className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+              >
+                <li>
+                  <a>
+                    <Link>Account</Link>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <Link>Logout</Link>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* navbar bottom */}
+      <div className="navbar_bottom flex items-center justify-center w-full h-[75px] bg-white">
+        <div className="lg:container flex items-center justify-between">
+          <div className="navbar_bottom_right">
+            <div className="dropdown dropdown-start">
+              <div tabIndex={0} role="button" className="btn m-1">
+                <Menu /> all categories
+              </div>
+              <ul
+                tabIndex={0}
+                className="dropdown-content menu p-2 shadow-sm bg-base-100 rounded-box z-1 w-52"
+              >
+                <li>
+                  <a>Item 1</a>
+                </li>
+                <li>
+                  <a>Item 2</a>
+                </li>
+              </ul>
+            </div>
+
+            <nav className="flex items-center gap-6">
+              <NavLink
+                to="/"
+                className="text-sm text-[#029fae] font-inter font-medium capitalize"
+              >
+                Home
+              </NavLink>
+              <NavLink className="text-sm text-[#636270] font-inter font-medium capitalize">
+                shop
+              </NavLink>
+              <NavLink className="text-sm text-[#636270] font-inter font-medium capitalize">
+                product
+              </NavLink>
+              <NavLink className="text-sm text-[#636270] font-inter font-medium capitalize">
+                pages
+              </NavLink>
+              <NavLink className="text-sm text-[#636270] font-inter font-medium capitalize">
+                about
+              </NavLink>
+            </nav>
           </div>
         </div>
       </div>
