@@ -94,14 +94,10 @@ const Navbar = () => {
                 className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
               >
                 <li>
-                  <a>
-                    <Link>Account</Link>
-                  </a>
+                  <Link>Account</Link>
                 </li>
                 <li>
-                  <a>
-                    <Link>Logout</Link>
-                  </a>
+                  <Link>Logout</Link>
                 </li>
               </ul>
             </div>
@@ -110,27 +106,30 @@ const Navbar = () => {
       </div>
 
       {/* navbar bottom */}
-      <div className="navbar_bottom flex items-center justify-center w-full h-[75px] bg-white">
+      <div className="navbar_bottom flex items-center justify-center w-full h-[75px] bg-white border-b-[1px] border-[#e1e3e5]">
         <div className="lg:container flex items-center justify-between">
-          <div className="navbar_bottom_right">
+          <div className="navbar_bottom_left flex items-center gap-8">
             <div className="dropdown dropdown-start">
-              <div tabIndex={0} role="button" className="btn m-1">
+              <div
+                tabIndex={0}
+                role="button"
+                className="btn m-1 flex items-center gap-5 capitalize"
+              >
                 <Menu /> all categories
               </div>
               <ul
                 tabIndex={0}
                 className="dropdown-content menu p-2 shadow-sm bg-base-100 rounded-box z-1 w-52"
               >
-                <li>
-                  <a>Item 1</a>
-                </li>
-                <li>
-                  <a>Item 2</a>
-                </li>
+                <li>Chair</li>
+                <li>Pant</li>
+                <li>Shirt</li>
+                <li>T-Shirt</li>
+                <li>T-Shirt</li>
               </ul>
             </div>
 
-            <nav className="flex items-center gap-6">
+            <nav className="flex items-center gap-8">
               <NavLink
                 to="/"
                 className="text-sm text-[#029fae] font-inter font-medium capitalize"
@@ -150,6 +149,12 @@ const Navbar = () => {
                 about
               </NavLink>
             </nav>
+          </div>
+
+          <div className="navbar_bottom_right">
+            <p className="text-sm text-[#636270] font-inter font-normal capitalize">
+              contact: <span className="text-[#272343]">(808)555-1001</span>
+            </p>
           </div>
         </div>
       </div>
