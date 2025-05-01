@@ -41,7 +41,7 @@ const Banner = () => {
 
   return (
     <div className="lg:container">
-      <div className="slider-container w-full max-w-[1400px] h-full mx-auto px-4">
+      <div className="slider-container slider_container w-full max-w-[1400px] h-full mx-auto">
         <Slider {...settings}>
           {products?.map((product) => (
             <div key={product?.id} className="banner_slide_item">
