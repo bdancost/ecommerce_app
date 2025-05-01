@@ -39,6 +39,14 @@
   z-index: 5 !important;
 }
 
+.slick-prev {
+  left: -75px !important;
+}
+
+.slick-next {
+  right: -75px !important;
+}
+
 .slick-prev:before,
 .slick-next:before {
   font-family: "slick";
