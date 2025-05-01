@@ -2,7 +2,7 @@ import { Clock3, Percent, ShieldCheck, Truck } from "lucide-react";
 
 const Delivery = () => {
   return (
-    <div className="lg:container mx-auto shadow-md p-7 rounded-b-2xl">
+    <div className="lg:container bg-white mx-auto shadow-md p-7 rounded-2xl">
       <div className="grid grid-cols-4">
         <div className="delivery_wrapper">
           <div className="flex items-center gap-4">
