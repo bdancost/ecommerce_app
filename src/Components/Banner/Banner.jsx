@@ -9,25 +9,25 @@ const Banner = () => {
       id: 1,
       title: "Best Furniture collection for your interior",
       subtitle: "welcome to chairs",
-      image: "/scs/assets/Banner/banner_image.png",
+      image: "/src/assets/Banner/banner_image.png",
     },
     {
       id: 2,
       title: "Best Furniture collection for your interior",
       subtitle: "welcome to chairs",
-      image: "/scs/assets/Banner/banner_image.png",
+      image: "/src/assets/Banner/banner_image.png",
     },
     {
       id: 3,
       title: "Best Furniture collection for your interior",
       subtitle: "welcome to chairs",
-      image: "/scs/assets/Banner/banner_image.png",
+      image: "/src/assets/Banner/banner_image.png",
     },
     {
       id: 4,
       title: "Best Furniture collection for your interior",
       subtitle: "welcome to chairs",
-      image: "/scs/assets/Banner/banner_image.png",
+      image: "/src/assets/Banner/banner_image.png",
     },
   ];
 
@@ -44,14 +44,23 @@ const Banner = () => {
       <div className="slider-container">
         <Slider {...settings}>
           {products?.map((product) => (
-            <div key={product.id}>
+            <div key={product?.id} className="banner_slide_item">
               {/* banner text */}
               <div className="banner_text">
-                <p>{product?.subtitle}</p>
-                <h3>{product?.title}</h3>
-                <button>
+                <p className="text-sm font-inter text-[#272343] uppercase font-normal">
+                  {product?.subtitle}
+                </p>
+                <h3 className="text-6xl font-inter text-[#272343] capitalize leading-16 max-w-[631px] w-full font-bold mb-5">
+                  {product?.title}
+                </h3>
+                <button className="max-w-[171px] w-full flex items-center justify-center gap-2 h-[52px] bg-[#029fae]">
                   Shop Now <MoveRight />
                 </button>
+              </div>
+
+              {/* banner image */}
+              <div className="banner_image">
+                <img src={product?.image} alt={product?.title} />
               </div>
             </div>
           ))}

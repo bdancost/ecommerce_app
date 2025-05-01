@@ -7,3 +7,9 @@
 @theme {
   --font-inter: "Inter", sans-serif;
 }
+
+.banner_slide_item {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
