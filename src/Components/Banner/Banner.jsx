@@ -41,7 +41,7 @@ const Banner = () => {
 
   return (
     <div className="lg:container">
-      <div className="slider-container">
+      <div className="slider-container w-full h-full">
         <Slider {...settings}>
           {products?.map((product) => (
             <div key={product?.id} className="banner_slide_item">
@@ -53,13 +53,13 @@ const Banner = () => {
                 <h3 className="text-6xl font-inter text-[#272343] capitalize leading-16 max-w-[631px] w-full font-bold mb-5">
                   {product?.title}
                 </h3>
-                <button className="max-w-[171px] w-full flex items-center justify-center gap-2 h-[52px] bg-[#029fae]">
+                <button className="max-w-[171px] w-full flex items-center justify-center gap-2 h-[52px] bg-[#029fae] rounded-lg text-white font-inter font-normal text-base capitalize cursor-pointer">
                   Shop Now <MoveRight />
                 </button>
               </div>
 
               {/* banner image */}
-              <div className="banner_image">
+              <div className="banner_image w-full h-full flex items-center justify-center">
                 <img src={product?.image} alt={product?.title} />
               </div>
             </div>
