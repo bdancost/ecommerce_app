@@ -10,7 +10,7 @@ const Home = () => {
       </div>
 
       {/* delivery component */}
-      <div className="w-full min-h-[#150px] bg-white shadow-md p-7">
+      <div className="w-full min-h-[#150px] bg-white mb-20">
         <Delivery />
       </div>
     </div>
