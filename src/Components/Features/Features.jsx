@@ -31,10 +31,35 @@ const Features = () => {
       image: "/src/assets/Features/product_4.png",
       currentPrice: "$200",
     },
+    {
+      title: "library stool",
+      status: "New",
+      price: "$250",
+      image: "/src/assets/Features/product_1.png",
+      currentPrice: "$200",
+    },
+    {
+      title: "library stool Chair",
+      status: "Sales",
+      price: "$250",
+      image: "/src/assets/Features/product_2.png",
+    },
+    {
+      title: "library stool Chair",
+      price: "$250",
+      image: "/src/assets/Features/product_3.png",
+    },
+    {
+      title: "library stool Chair",
+      status: "New",
+      price: "$250",
+      image: "/src/assets/Features/product_4.png",
+      currentPrice: "$200",
+    },
   ];
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -46,7 +71,7 @@ const Features = () => {
       <div className="lg:container mx-auto">
         <SectionTitle title="Features Products" mb="mb-11" />
 
-        <div className="slider-container features_slider w-full h-full">
+        <div className="max-w-[1400px] slider-container features_slider w-full h-full">
           <Slider {...settings}>
             {features?.map((feature, index) => (
               <div key={index} className="p-4">
@@ -58,7 +83,9 @@ const Features = () => {
                   />
                   {feature?.status && (
                     <div className="absolute top-4 left-4 bg-[#007580] text-white px-2 py-1 rounded-lg">
-                      <button>{feature?.status}</button>
+                      <button className="text-sm font-inter font-normal">
+                        {feature?.status}
+                      </button>
                     </div>
                   )}
                 </div>

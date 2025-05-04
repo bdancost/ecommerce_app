@@ -22,7 +22,7 @@ const Home = () => {
       </div>
 
       {/* features component */}
-      <div className="w-full flex items-center justify-center">
+      <div className="w-full flex items-center justify-center mb-[80px]">
         <Features />
       </div>
     </div>
