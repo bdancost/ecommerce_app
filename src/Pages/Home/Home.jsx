@@ -2,6 +2,8 @@ import Banner from "../../Components/Banner/Banner";
 import Delivery from "../../Components/Delivery/Delivery";
 import Brand from "../../Components/Brand/Brand";
 import Features from "../../Components/Features/Features";
+import Categories from "../../Components/Categories/Categories";
+import Product from "../../Components/Product/Product";
 
 const Home = () => {
   return (
@@ -24,6 +26,16 @@ const Home = () => {
       {/* features component */}
       <div className="w-full flex items-center justify-center mb-[80px]">
         <Features />
+      </div>
+
+      {/* features categories */}
+      <div className="w-full flex items-center justify-center mb-[80px]">
+        <Categories />
+      </div>
+
+      {/* product component */}
+      <div className="w-full flex items-center justify-center mb-[80px]">
+        <Product />
       </div>
     </div>
   );

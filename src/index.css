@@ -86,23 +86,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.slider_container > .slick-slider > .slick-dots li button:before {
-  font-family: "slick";
-  font-size: 18px !important;
-  line-height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 25px;
-  height: 20px;
-  content: "•";
-  text-align: center;
-  opacity: 0.25;
-  color: black;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .slider_container
   > .slick-slider
   > .slick-dots
