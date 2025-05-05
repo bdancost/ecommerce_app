@@ -2,8 +2,8 @@ const SectionTitle = ({ title, mb, textAlign }) => {
   const margin = mb || "mb-0";
   return (
     <div
-      className={`w-full flex items-center justify-start ${
-        textAlign === "center" ? "justify-center" : "justify-start"
+      className={`w-full flex items-center ${
+        textAlign === "center" ? `justify-${textAlign}` : "justify-start"
       }`}
     >
       <h3
