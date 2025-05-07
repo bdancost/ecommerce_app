@@ -30,6 +30,68 @@ const Product = () => {
     },
   ];
 
+  const products = [
+    {
+      title: "library stool",
+      status: "New",
+      price: "$250",
+      image: "/src/assets/Products/product_1.png",
+      currentPrice: "$200",
+      product: "newest",
+    },
+    {
+      title: "library stool Chair",
+      status: "Sales",
+      price: "$250",
+      image: "/src/assets/Products/product_2.png",
+      product: "newest",
+    },
+    {
+      title: "library stool",
+      status: "New",
+      price: "$250",
+      image: "/src/assets/Products/product_3.png",
+      currentPrice: "$200",
+      product: "newest",
+    },
+    {
+      title: "library stool Chair",
+      status: "Sales",
+      price: "$250",
+      image: "/src/assets/Products/product_4.png",
+      product: "newest",
+    },
+    {
+      title: "library stool Chair",
+      status: "Sales",
+      price: "$250",
+      image: "/src/assets/Products/product_5.png",
+      product: "trending",
+    },
+    {
+      title: "library stool",
+      status: "New",
+      price: "$250",
+      image: "/src/assets/Products/product_6.png",
+      currentPrice: "$200",
+      product: "trending",
+    },
+    {
+      title: "library stool Chair",
+      status: "Sales",
+      price: "$250",
+      image: "/src/assets/Products/product_7.png",
+      product: "trending",
+    },
+    {
+      title: "library stool Chair",
+      status: "Sales",
+      price: "$250",
+      image: "/src/assets/Products/product_8.png",
+      product: "trending",
+    },
+  ];
+
   return (
     <div className="lg:container mx-auto">
       <div className="flex flex-col items-center justify-center">
