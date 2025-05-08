@@ -34,7 +34,7 @@ const Home = () => {
       </div>
 
       {/* product component */}
-      <div className="w-full flex items-center justify-center mb-[80px]">
+      <div className="w-full flex items-center justify-center pb-[80px]">
         <Product />
       </div>
     </div>
