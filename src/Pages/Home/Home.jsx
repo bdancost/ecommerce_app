@@ -4,6 +4,7 @@ import Brand from "../../Components/Brand/Brand";
 import Features from "../../Components/Features/Features";
 import Categories from "../../Components/Categories/Categories";
 import Product from "../../Components/Product/Product";
+import Client from "../../Components/Client/Client";
 
 const Home = () => {
   return (
@@ -36,6 +37,11 @@ const Home = () => {
       {/* product component */}
       <div className="w-full flex items-center justify-center pb-[80px]">
         <Product />
+      </div>
+
+      {/* client say component */}
+      <div className="w-full flex items-center justify-center bg-[#f0f2f3] min-h-[589px]">
+        <Client />
       </div>
     </div>
   );
