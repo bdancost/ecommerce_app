@@ -39,9 +39,10 @@ const Client = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
   };
 
   return (
@@ -55,14 +56,22 @@ const Client = () => {
       <div className="max-w-[1400px] slider-container w-full h-full">
         <Slider {...settings}>
           {clientSays?.map((client, index) => (
-            <div key={index} className="p-4">
-              <p className="text-2xl text-[#636270] font-inter font-normal client_say_description">
+            <div key={index} className="p-12 border-[#e1e1e3] rounded-lg">
+              <p className="text-2xl mb-4 text-[#636270] font-inter font-normal client_say_description">
                 {client?.description}
               </p>
               <div className="flex items-center">
                 <h4>
-                  <User />
+                  <User size="4rem" />
                 </h4>
+                <div>
+                  <h4 className="text-2xl text-[#272343] font-inter font-medium capitalize mb-1">
+                    {client?.name}
+                  </h4>
+                  <p className="text-base text-[#9a9caa] font-inter font-normal">
+                    {client?.position}
+                  </p>
+                </div>
               </div>
             </div>
           ))}
