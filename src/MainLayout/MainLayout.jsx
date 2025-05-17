@@ -30,6 +30,8 @@ const MainLayout = () => {
           {/* not found routes */}
           <Route path="*" element={<Error />} />
         </Routes>
+
+        {/* foooter component */}
       </BrowserRouter>
     </div>
   );
