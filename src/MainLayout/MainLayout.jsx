@@ -6,6 +6,7 @@ import Login from "../Pages/Auth/Login/Login";
 import Register from "../Pages/Auth/Register/Register";
 import Error from "../Pages/Error/Error";
 import AuthCheck from "../AuthCheck/AuthCheck";
+import Footer from "../Components/Footer/Footer";
 
 const MainLayout = () => {
   return (
@@ -32,6 +33,7 @@ const MainLayout = () => {
         </Routes>
 
         {/* foooter component */}
+        <Footer />
       </BrowserRouter>
     </div>
   );
