@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { Armchair, Facebook } from "lucide-react";
+import { Armchair, Facebook, Twitter, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -20,15 +20,23 @@ const Footer = () => {
               </Link>
             </div>
 
-            <p className="text-base text-[#272343] font-inter font-normal mb-3.5 max-w-[350px]">
+            <p className="text-base text-[#272343] font-inter font-normal mb-4 max-w-[350px]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
               beatae amet. Eius, recusandae earum obcaecati incidunt omnis
               deserunt distinctio nisi quaerat sapiente sit quidem, beatae
               numquam deleniti. Aliquid, at. Nisi?
             </p>
             <div className="footer_social">
-              <Link className="p-4 rounded-full border-[#007580] inline-block border-[1px]">
+              <Link className="p-3 rounded-full border-[#007580] inline-block border-[1px]">
                 <Facebook size="1.5rem" color="#007580" />{" "}
+              </Link>
+
+              <Link className="p-3 inline-block">
+                <Twitter size="1.5rem" color="#007580" />{" "}
+              </Link>
+
+              <Link className="p-3 inline-block">
+                <Instagram size="1.5rem" color="#007580" />{" "}
               </Link>
             </div>
           </div>
