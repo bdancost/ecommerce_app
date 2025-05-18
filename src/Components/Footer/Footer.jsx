@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="lg:container mx-auto">
           <div>
             {/* logo wrapper */}
-            <div className="logo_wrapper">
+            <div className="logo_wrapper mb-7">
               <Link
                 to="/"
                 className="text-3xl text-black font-inter font-medium capitalize flex items-center gap-2"
@@ -20,7 +20,7 @@ const Footer = () => {
               </Link>
             </div>
 
-            <p>
+            <p className="text-base text-[#272343] font-inter font-normal mb-3.5 max-w-[350px]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
               beatae amet. Eius, recusandae earum obcaecati incidunt omnis
               deserunt distinctio nisi quaerat sapiente sit quidem, beatae
@@ -28,7 +28,7 @@ const Footer = () => {
             </p>
             <div className="footer_social">
               <Link className="p-4 rounded-full border-[#007580] inline-block border-[1px]">
-                <Facebook size="1.5rem" />{" "}
+                <Facebook size="1.5rem" color="#007580" />{" "}
               </Link>
             </div>
           </div>
