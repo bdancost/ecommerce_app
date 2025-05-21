@@ -111,7 +111,17 @@ const Footer = () => {
       </div>
 
       <div className="footer_bottom w-full h-[75px] flex items-center justify-center">
-        <div className="lg:container mx-auto"></div>
+        <div className="lg:container mx-auto">
+          <div className="grid grid-cols-2 items-center">
+            <div>
+              <p className="text-base text-[#9a9caa] font-normal font-inter">
+                {" "}
+                &copy; 2025 Blogy - Designed & Develop{" "}
+                <span className="text-[#272343]">Lifeonthecode</span>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   );
