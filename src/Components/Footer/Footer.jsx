@@ -4,9 +4,7 @@ import { Armchair, Facebook, Twitter, Instagram, Youtube } from "lucide-react";
 const Footer = () => {
   return (
     <footer>
-      <div className="footer_top"></div>
-
-      <div className="footer_bottom mx-h-[343px] w-full border-t border-[#e1e3e5] pt-[80px] pb-[60px]">
+      <div className="footer_top mx-h-[343px] w-full border-t border-[#e1e3e5] pt-[80px] pb-[60px]">
         <div className="lg:container mx-auto">
           <div className="grid grid-cols-4 gap-4">
             <div>
@@ -91,7 +89,10 @@ const Footer = () => {
               <h3 className="text-xl text-[#9a9caa] font-inter font-medium uppercase">
                 newsletter
               </h3>
-              <form action="#" className="max-w-[424px] w-full gap-2">
+              <form
+                action="#"
+                className="max-w-[424px] w-full flex items-center gap-2"
+              >
                 <input
                   type="email"
                   placeholder="Your Email.."
@@ -99,7 +100,7 @@ const Footer = () => {
                 />
                 <button
                   type="submit"
-                  className="text-base text-white font-semibold capitalize w-[127px] h-[46px] bg-[#007580] rounded-lg"
+                  className="text-base text-white font-semibold capitalize w-[127px] h-[46px] bg-[#007580] rounded-lg cursor-pointer"
                 >
                   Subscribe
                 </button>
@@ -107,6 +108,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="footer_bottom w-full h-[75px] flex items-center justify-center">
+        <div className="lg:container mx-auto"></div>
       </div>
     </footer>
   );
