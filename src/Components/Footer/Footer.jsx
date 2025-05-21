@@ -8,7 +8,7 @@ const Footer = () => {
 
       <div className="footer_bottom mx-h-[343px] w-full border-t border-[#e1e3e5] pt-[80px] pb-[60px]">
         <div className="lg:container mx-auto">
-          <div className="grid grid-cols-4">
+          <div className="grid grid-cols-4 gap-4">
             <div>
               {/* logo wrapper */}
               <div className="logo_wrapper mb-7">
@@ -88,8 +88,15 @@ const Footer = () => {
             </div>
 
             <div className="newsletter">
-              <form action="#">
-                <input type="email" placeholder="Your Email.." />
+              <h3 className="text-xl text-[#9a9caa] font-inter font-medium uppercase">
+                newsletter
+              </h3>
+              <form action="#" className="max-w-[424px]">
+                <input
+                  type="email"
+                  placeholder="Your Email.."
+                  className="max-w-[285px] w-full h-[46px] border-[#e1e3e5] border-[1px] rounded-lg"
+                />
                 <button type="submit">Subscribe</button>
               </form>
             </div>
