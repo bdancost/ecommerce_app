@@ -1,10 +1,18 @@
 import { Link } from "react-router";
-import { Armchair, Facebook, Twitter, Instagram, Youtube } from "lucide-react";
+import {
+  Armchair,
+  Banknote,
+  CreditCard,
+  Facebook,
+  Twitter,
+  Instagram,
+  Youtube,
+} from "lucide-react";
 
 const Footer = () => {
   return (
     <footer>
-      <div className="footer_top mx-h-[343px] w-full border-t border-[#e1e3e5] pt-[80px] pb-[60px]">
+      <div className="footer_top mx-h-[343px] w-full border-t border-b border-[#e1e3e5] pt-[80px] pb-[60px]">
         <div className="lg:container mx-auto">
           <div className="grid grid-cols-4 gap-4">
             <div>
@@ -112,12 +120,26 @@ const Footer = () => {
 
       <div className="footer_bottom w-full h-[75px] flex items-center justify-center">
         <div className="lg:container mx-auto">
-          <div className="grid grid-cols-2 items-center">
+          <div className="flex items-center justify-between">
             <div>
               <p className="text-base text-[#9a9caa] font-normal font-inter">
                 {" "}
                 &copy; 2025 Blogy - Designed & Develop{" "}
                 <span className="text-[#272343]">Lifeonthecode</span>
+              </p>
+            </div>
+
+            <div className="flex items-center gap-3.5">
+              <p className="flex items-center gap-2 text-[#9a9caa] text-xl">
+                {" "}
+                Bank Note
+                <Banknote size="2rem" />
+              </p>
+
+              <p className="flex items-center gap-2 text-[#9a9caa] text-xl">
+                {" "}
+                Credit Card
+                <CreditCard size="2rem" />
               </p>
             </div>
           </div>
