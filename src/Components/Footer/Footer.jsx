@@ -42,7 +42,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="footer_wrapper">
-              <h3 className="text-2xl text-[#9a9caa] font-inter font-medium uppercase">
+              <h3 className="text-xl text-[#9a9caa] font-inter font-medium uppercase">
                 category
               </h3>
               <ul className="space-y-2 mt-4">
@@ -63,6 +63,26 @@ const Footer = () => {
                 </li>
                 <li className="text-base text-[#272343] font-inter font-normal capitalize">
                   <Link>park bench</Link>
+                </li>
+              </ul>
+            </div>
+
+            <div className="footer_wrapper">
+              <h3 className="text-xl text-[#9a9caa] font-inter font-medium uppercase">
+                support
+              </h3>
+              <ul className="space-y-2 mt-4">
+                <li className="text-base text-[#272343] font-inter font-normal capitalize">
+                  <Link>help & supoort</Link>
+                </li>
+                <li className="text-base text-[#272343] font-inter font-normal capitalize">
+                  <Link>tearms & condition</Link>
+                </li>
+                <li className="text-base text-[#272343] font-inter font-normal capitalize">
+                  <Link>privacy policy</Link>
+                </li>
+                <li className="text-base text-[#272343] font-inter font-normal capitalize">
+                  <Link>help</Link>
                 </li>
               </ul>
             </div>
