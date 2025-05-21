@@ -91,13 +91,18 @@ const Footer = () => {
               <h3 className="text-xl text-[#9a9caa] font-inter font-medium uppercase">
                 newsletter
               </h3>
-              <form action="#" className="max-w-[424px]">
+              <form action="#" className="max-w-[424px] w-full gap-2">
                 <input
                   type="email"
                   placeholder="Your Email.."
-                  className="max-w-[285px] w-full h-[46px] border-[#e1e3e5] border-[1px] rounded-lg"
+                  className="max-w-[260px] w-full h-[36px] border-[#e1e3e5] border-[1px] rounded-lg pl-2"
                 />
-                <button type="submit">Subscribe</button>
+                <button
+                  type="submit"
+                  className="text-base text-white font-semibold capitalize w-[127px] h-[46px] bg-[#007580] rounded-lg"
+                >
+                  Subscribe
+                </button>
               </form>
             </div>
           </div>
