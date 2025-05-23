@@ -1,7 +1,12 @@
 import { MoveRight } from "lucide-react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const submitHandle = () => {
+    navigate("/");
+  };
+
   return (
     <div className="lg:container mx-auto p-[80px]">
       <div className="max-w-[648px] w-full min-h-[382px] p-[31px] mx-auto flex items-center justify-center flex-col rounded-lg border-[1px] border-[#9a9caa]">
@@ -10,6 +15,7 @@ const Login = () => {
         </h3>
         <form
           action="#"
+          onSubmit={submitHandle}
           className="flex flex-col items-center w-full space-y-4"
         >
           <input
