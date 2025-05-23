@@ -1,3 +1,4 @@
+import { MoveRight } from "lucide-react";
 import { Link } from "react-router";
 
 const Register = () => {
@@ -18,18 +19,26 @@ const Register = () => {
           />
           <input
             type="email"
-            placeholder="Your Name..."
+            placeholder="Your Email..."
+            className="w-full h-[50px] bg-[#f0f2f3] rounded-lg pl-3.5"
+          />
+          <input
+            type="password"
+            placeholder="Your Password..."
             className="w-full h-[50px] bg-[#f0f2f3] rounded-lg pl-3.5"
           />
           <button
             type="submit"
-            className="w-full h-[50px] bg-[#007580] rounded-lg pl-3.5"
+            className="w-full h-[50px] bg-[#007580] rounded-lg pl-3.5 text-base text-white font-semibold font-inter capitalize flex items-center justify-center cursor-pointer gap-2.5"
           >
-            Register
+            Register <MoveRight />
           </button>
         </form>
-        <p>
-          Don't have an account?<Link to={"/auth/login"}>Login</Link>
+        <p className="text-base text-[#272343] font-normal font-inter flex items-center justify-center gap-2.5 mt-4">
+          Don't have an account?
+          <Link to={"/auth/login"} className="text-[#007580] font-semibold">
+            Login
+          </Link>
           {""}
         </p>
       </div>
